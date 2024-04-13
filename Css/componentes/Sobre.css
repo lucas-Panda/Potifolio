@@ -1,0 +1,50 @@
+.sobre{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    scroll-margin-top: 20rem;
+}
+
+.sobre .sobre_left{
+    max-width: 40rem;
+    flex: 1;
+}
+
+.sobre .sobre_left p{
+    margin: 1rem 0 2rem;
+}
+
+.sobre .sobre_left ul{
+    margin-left: -1.2rem;
+}
+
+.sobre .sobre_left ul li{
+    display: inline-block;
+}
+
+.sobre .sobre_left ul li a{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 5rem;
+}
+
+.sobre .sobre_right{
+    flex: 1;
+    max-width: 66rem;
+}
+
+@media only screen and (max-width: 768px){
+    .sobre{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre .sobre_left{
+        max-width: 66rem;
+        text-align: center;
+    }
+
+    .sobre .sobre_right{
+        text-align: center;
+    }
+}

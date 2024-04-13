@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=outfit:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    background-image: url(img/fundo-de-verao-com-folhas-em-estilo-de-jornal_23-2148550417.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-image: linear-gradient(#46295a, #006059);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #ff862c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.btn-expandir > i{
+    color: #ffeee2;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: #ff862c;
+}
+
+ul li.item-menu:hover{
+    background-color: #ff862c;
+}
+
+ul li.item-menu a{
+    color: #ffeee2;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: 1s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 20px;
+    opacity: 1;
+    margin-top: 7px;
+}
+
+ul li.item-menu a .icon:hover{
+    animation: animação .8s;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.linha{
+    color: #ffeee2;
+    text-align: center;
+    background-image: linear-gradient(#46295a, #006059);
+    border-radius: 40px;
+    width: 800px;
+    height: 550px;
+    border: 3px solid #ff862c;
+    box-shadow: 20px 20px 40px #22142c;
+}
+
+.linha2{
+    color: #ffeee2;
+    text-align: center;
+    background-image: linear-gradient(#46295a, #006059);
+    border-radius: 40px;
+    width: 1000px;
+    height: 2190px;
+    border: 3px solid #ff862c;
+    box-shadow: 20px 20px 40px #22142c;
+}
+
+.linha3{
+    color: #ffeee2;
+    text-align: center;
+    background-image: linear-gradient(#46295a, #006059);
+    border-radius: 40px;
+    width: 800px;
+    height: 1000px;
+    border: 3px solid #ff862c;
+    box-shadow: 20px 20px 40px #22142c;
+}
+
+.linha4{
+    color: #ffeee2;
+    text-align: center;
+    background-image: linear-gradient(#46295a, #006059);
+    border-radius: 40px;
+    width: 800px;
+    height: 550px;
+    border: 3px solid #ff862c;
+    box-shadow: 20px 20px 40px #22142c;
+}
+
+.linha5{
+    color: #ffeee2;
+    text-align: center;
+    background-image: linear-gradient(#46295a, #006059);
+    border-radius: 40px;
+    width: 320px;
+    height: 310px;
+    border: 3px solid #ff862c;
+    box-shadow: 20px 20px 40px #22142c;
+}
+
+.linha6{
+    color: #ffeee2;
+    text-align: center;
+    background-image: linear-gradient(#46295a, #006059);
+    border-radius: 40px;
+    width: 800px;
+    height: 350px;
+    border: 3px solid #ff862c;
+    box-shadow: 20px 20px 40px #22142c;
+}
+
+#House{
+    border-radius: 60px;
+    width: 53%;
+}
+
+#h1-est{
+    font-size: 70px;
+}
+
+#h2-est{
+    font-size: 35px;
+}
+
+#Cardapio{
+    list-style-type: none;
+    background-color: #3d244e83;
+    border-radius: 10px;
+    padding: 20px 60px 10px 60px;
+    margin: 20px;
+    box-shadow: 0px 0px 30px #e2caf3 ; 
+}
+
+#Cardapio2{
+    height: 100%;
+    left: 0;
+    line-height: 40px;
+}
+#monte{
+    list-style-type: disc;
+    font-size: 25px;
+    color: #e2caf3;
+    margin: 15px;
+}
+
+#h2{
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+#h2-2{
+    font-size: 25px;
+    margin-right: 90px;
+}
+
+.Cardapio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+
+.Cardapio2{
+    display: flex;
+    
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+
+#Foto{
+    margin: 10px;
+    width: 40%;
+    border-radius: 20px;
+}
+.fotos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Contato{
+    font-size: 150px;
+    color: #e2caf3;
+    margin: 50px;
+}
+#Contato2{
+    font-size: 80px;
+    color: #e2caf3;
+    margin: 20px;
+}
+#h4{
+    font-size: 30px;
+    color: #e2caf3;
+    margin: 20px;
+}
+
+/* Agr vem o caralho */ 
+
+@media (max-width: 700px){
+    @import url('https://fonts.googleapis.com/css2?family=outfit:wght@300&display=swap');
+
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+        height: 100vh;
+        background-image: url(https://i.pinimg.com/originals/3f/8c/72/3f8c72eba5a634d1d15e2f27f2fa6e64.jpg);
+        background-size: 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    nav.menu-lateral{
+        width: 80px;
+        height: 10%;
+        border-radius: 20px;
+        padding: 20px 10px 20px 1%;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        transition: 1s;
+    }
+
+    nav.menu-lateral.expandir{
+        width: 300px;
+        height: 100%;
+    }
+
+    .btn-expandir{
+        width: 100%;
+        
+    }
+
+    .btn-expandir > i{
+        color: #ffeee2;
+        font-size: 40px;
+        cursor: pointer;
+        
+    }
+
+    ul{
+        height: 100%;
+        list-style-type: none;
+    }
+
+    ul li.item-menu{
+        transition: .2s;
+    }
+
+
+    ul li.item-menu a{
+        color: #ffeee2;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 20px 4%;
+        display: flex;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+
+    ul li.item-menu a .txt-link{
+        margin-left: 70px;
+        transition: 1s;
+        opacity: 0;
+    }
+
+    nav.menu-lateral.expandir .txt-link{
+        margin-left: 20px;
+        opacity: 1;
+        margin-top: 7px;
+    }
+
+    ul li.item-menu a .icon:hover{
+        animation: animação .8s;
+    }
+
+    ul li.item-menu a .icon > i{
+        font-size: 40px;
+        margin-left: 5px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .linha{
+        color: #ffeee2;
+        text-align: center;
+        background-image: linear-gradient(#46295a, #006059);
+        border-radius: 40px;
+        width: 320px;
+        height: 510px;
+        border: 3px solid #ff862c;
+        box-shadow: 20px 20px 40px #22142c;
+    }
+
+    .linha2{
+        color: #ffeee2;
+        text-align: center;
+        background-image: linear-gradient(#46295a, #006059);
+        border-radius: 40px;
+        width: 320px;
+        height: 3750px;
+        border: 3px solid #ff862c;
+        box-shadow: 20px 20px 40px #22142c;
+    }
+
+    .linha3{
+        color: #ffeee2;
+        text-align: center;
+        background-image: linear-gradient(#46295a, #006059);
+        border-radius: 40px;
+        width: 320px;
+        height: 500px;
+        border: 3px solid #ff862c;
+        box-shadow: 20px 20px 40px #22142c;
+    }
+
+    .linha4{
+        color: #ffeee2;
+        text-align: center;
+        background-image: linear-gradient(#46295a, #006059);
+        border-radius: 40px;
+        width: 320px;
+        height: 600px;
+        border: 3px solid #ff862c;
+        box-shadow: 20px 20px 40px #22142c;
+    }
+
+    .linha5{
+        color: #ffeee2;
+        text-align: center;
+        background-image: linear-gradient(#46295a, #006059);
+        border-radius: 40px;
+        width: 320px;
+        height: 310px;
+        border: 3px solid #ff862c;
+        box-shadow: 20px 20px 40px #22142c;
+    }
+
+    .linha6{
+        color: #ffeee2;
+        text-align: center;
+        background-image: linear-gradient(#46295a, #006059);
+        border-radius: 40px;
+        width: 800px;
+        height: 550px;
+        border: 3px solid #ff862c;
+        box-shadow: 20px 20px 40px #22142c;
+    }
+
+    #House{
+        border-radius: 60px;
+        width: 95%;
+    }
+
+    #h1-est{
+        font-size: 45px;
+    }
+
+    #h2-est{
+        font-size: 25px;
+        
+    }
+
+    #Cardapio{
+        list-style-type: none;
+        background-color: #3d244e83;
+        border-radius: 10px;
+        padding: 10px 10px 10px 10px;
+        margin: 10px;
+    }
+
+    #Cardapio2{
+        height: 100%;
+        left: 10px;
+        line-height: 20px;
+    }
+    #monte{
+        list-style-type: disc;
+        font-size: 25px;
+        color: #e2caf3;
+        margin: 15px;
+    }
+
+    #h2{
+        font-size: 25px;
+        margin: 20px 10px 20px 10px;
+
+    }
+
+    #h2-2{
+        font-size: 25px;
+        margin-right: 90px;
+    }
+
+    .Cardapio{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap; 
+    }
+
+    .Cardapio2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap; 
+    }
+
+    #Foto{
+        margin: 10px;
+        width: 40%;
+        border-radius: 20px;
+    }
+    .fotos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #Contato{
+        font-size: 150px;
+        color: #e2caf3;
+        margin: 50px;
+    }
+    #Contato2{
+        font-size: 80px;
+        color: #e2caf3;
+        margin: 20px;
+    }
+    #h4{
+        font-size: 30px;
+        color: #e2caf3;
+        margin: 20px;
+    }
+}
